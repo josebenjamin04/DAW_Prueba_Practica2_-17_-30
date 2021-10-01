@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/Prueba3.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <title>Prueba Práctica 2 | DAW</title>
+</head>
+<body>
+    <h1>¡Bienvenido/a! - Restaurante "DeliPollo"</h1>
+    <fieldset>
+    <legend>Combos de comida</legend>
+    <h3>Este dia tenemos disponibles los siguientes combos:</h3>
+    <div>
+     <section id="ComboS">   
+        <h4>Super Combo</h4>
+        <h5>Precio: $7.25</h5>
+        <ul>
+            <li>tres piezas</li>
+            <li>ensalada</li>
+            <li>papas fritas </li>
+            <li>bebida grande de su elección </li>
+        </ul>
+    </section>
+    <section id="ComboP">
+        <h4>Combo Personal</h4>
+        <h5>Precio: $5.75</h5>
+        <ul>
+            <li>dos piezas</li>
+            <li>papas fritas </li>
+            <li>bebida mediana de su elección </li>
+        </ul>
+    </section>
+    <section id="ComboI">
+        <h4>Combo infantil</h4>
+        <h5>Precio: $3.50</h5>
+        <ul>
+            <li>una piezas</li>
+            <li>papas fritas </li>
+            <li>bebida pequeña de su elección </li>
+        </ul>
+    </section>
+    </div><br>
+   <br> <form  id="formCP">
+        <p>Elije tu combo preferido:</p>
+        <label><input type="radio" name="combo" id="sp" value="Super Combo">Super Combo</label>
+        <label><input type="radio" name="combo" id="cp" value="Combo Personal">Combo Personal</label>
+        <label><input type="radio" name="combo" id="ci" value="Combo Infántil">Combo Infántil</label>
+        <br>
+        <p>Cantidad de combos:</p>
+        <input type="number" name="cantC" value="1" min="1">
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Productos Adcionales</legend>
+            <p>Elije cualquiera de los productos:</p>
+            <label><input type="checkbox" name="Ensalada" value="1.50" />Ensalada</label>
+			<label><input type="checkbox" name="Papa frita" value="1.25" />Papa frita</label>
+			<label><input type="checkbox" name="grande" value="1.75" />Pieza de pollo grande</label>
+			<label><input type="checkbox" name="mediana" value="1.50" />Pieza de pollo mediana</label>
+			<label><input type="checkbox" name="pequeña" value="1.25" />Pieza de pollo pequeña</label>
+            <label><input type="checkbox" name="pequeña" value="1.25" />Bebida grande</label>
+            <label><input type="checkbox" name="pequeña" value="1.25" />Bebida mediana</label>
+            <label><input type="checkbox" name="pequeña" value="1.25" />Bebida pequeña</label>
+            <label><input type="checkbox" name="pequeña" value="1.25" />Cafe</label>
+            <label><input type="checkbox" name="pequeña" value="1.25" />Postre</label>
+    </fieldset>
+    <br>
+    </form>
+    <button onclick="program();">Comprar</button>
+    <p>Total a pagar ($):</p>
+    <input type="text" id="total" value="0.00" disabled>
+    <br>
+    <script src="js/Prueba2.js"></script>
+</body>
+</html>

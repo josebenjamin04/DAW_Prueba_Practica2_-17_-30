@@ -1,0 +1,66 @@
+h1,h3{
+	text-align: center;
+}
+h1{
+	font-family: 'Ephesis', cursive;
+	font-size: 50px;
+}
+h4,h5{
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+}
+h3{
+	font-family: 'Gemunu Libre', sans-serif;
+	font-size: 25px;
+}
+li{
+	font-family: 'Noto Sans', sans-serif;
+}
+p{
+	font-family: 'Quicksand', sans-serif;
+	font-size: 15px;
+}
+body{
+	background-image: url(https://www.wallpapertip.com/wmimgs/100-1005007_full-hd-texture-background.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	color: white;
+}
+label{
+	font-family: 'Oswald', sans-serif;
+	font-size: 15px;
+}
+#combos{
+	margin-top: 2px;
+}
+#ComboS{
+	background-color: #5D6D7E;
+	padding: 2px;
+	margin-left: 5px;
+	margin-right: 75%;
+	border-radius: 10%;
+	color: white;
+}
+#ComboP{
+	background-color: #5D6D7E;
+	padding: 2px;
+	margin-left: 5px;
+	margin-right: 35%;
+	margin-left: 40%;
+	margin-top: -12%;
+	border-radius: 10%;
+	color: white;
+}
+#ComboI{
+	background-color: #5D6D7E;
+	padding: 2px;
+	margin-left: 5px;
+	margin-right: 2%;
+	margin-left: 75%;
+	margin-top: -11%;
+	border-radius: 10%;
+	color: white;
+}
+#area{
+	
+}

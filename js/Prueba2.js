@@ -71,9 +71,8 @@ function show_txt4(){
 
 check6 = false;
 function show_txt5(){
-    
     document.getElementById("this5").innerHTML = "<input type='number' id='cantP6' value='1' min='1'>";
-    check6 = false
+    check6 = true;
 }
 
 check7 = false;

@@ -13,6 +13,7 @@
     <legend>Combos de comida</legend>
     <h3>Este dia tenemos disponibles los siguientes combos:</h3>
     <div>
+     <section id="ComboS">  
         <h4>Super Combo</h4>
         <h5>Precio: $7.25</h5>
         <ul>
@@ -41,7 +42,7 @@
         </ul>
     </section>
     </div>
-    <form  id="formCP">
+    <form action="javascript:void(0);" id="formCP">
         <p>Elije tu combo preferido:</p>
         <label><input type="radio" name="combo" id="sp" value="Super Combo">Super Combo</label>
         <label><input type="radio" name="combo" id="cp" value="Combo Personal">Combo Personal</label>
@@ -77,9 +78,21 @@
     </fieldset>
     <br>
     </form>
-    <button onclick="program();">Comprar</button>
+	   <p id="formstatus"></p>
+        <p>
+        Instrucciones: CTRL+E para Comentar y editar el comentario y CTRL+S para Guardar,
+        ESC para Cancelar.
+        </p>
+        <label for="email">Comentario: </label>
+        <div id="view"></div>
+        <textarea name="message" id="area" value="Tu mensaje" id="message" ></textarea>
+	<br>
+	<br>
+    <button  id="compra" onclick="program();">Comprar</button>
+  
     <br>
     <br>
+
     <div id="factura">
 
     </div>

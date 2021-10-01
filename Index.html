@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/Prueba3.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba Práctica 2 | DAW</title>
+</head>
+<body>
+    <h1>¡Bienvenido/a! - Restaurante "DeliPollo"</h1>
+    <fieldset>
+    <legend>Combos de comida</legend>
+    <h3>Este dia tenemos disponibles los siguientes combos:</h3>
+    <div>
+        <h4>Super Combo</h4>
+        <h5>Precio: $7.25</h5>
+        <ul>
+            <li>tres piezas</li>
+            <li>ensalada</li>
+            <li>papas fritas </li>
+            <li>bebida grande de su elección </li>
+        </ul>
+    </section>
+    <section id="ComboP">
+        <h4>Combo Personal</h4>
+        <h5>Precio: $5.75</h5>
+        <ul>
+            <li>dos piezas</li>
+            <li>papas fritas </li>
+            <li>bebida mediana de su elección </li>
+        </ul>
+    </section>
+    <section id="ComboI">
+        <h4>Combo infantil</h4>
+        <h5>Precio: $3.50</h5>
+        <ul>
+            <li>una piezas</li>
+            <li>papas fritas </li>
+            <li>bebida pequeña de su elección </li>
+        </ul>
+    </section>
+    </div>
+    <form action="javascript:void(0);" id="formCP">
+        <p>Elije tu combo preferido:</p>
+        <label><input type="radio" name="combo" id="sp" value="Super Combo">Super Combo</label>
+        <label><input type="radio" name="combo" id="cp" value="Combo Personal">Combo Personal</label>
+        <label><input type="radio" name="combo" id="ci" value="Combo Infántil">Combo Infántil</label>
+        <br>
+        <p>Cantidad de combos:</p>
+        <input type="number" name="cantC" value="1" min="1">
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Productos Adcionales</legend>
+            <p>Elije cualquiera de los productos:</p>
+            <label><input type="checkbox" name="check" value="1.50" onchange="show_txt();"/>Ensalada</label>
+            <div id="this"> </div>
+			<label><input type="checkbox" name="check" value="1.25" onchange="show_txt1();" />Papa frita</label>
+            <div id="this1"> </div>
+			<label><input type="checkbox" name="check" value="1.75"  onchange="show_txt2();"/>Pieza de pollo grande</label>
+            <div id="this2"> </div>
+			<label><input type="checkbox" name="check" value="1.50"  onchange="show_txt3();"/>Pieza de pollo mediana</label>
+            <div id="this3"> </div>
+			<label><input type="checkbox" name="check" value="1.25"  onchange="show_txt4();"/>Pieza de pollo pequeña</label>
+            <div id="this4"> </div>
+            <label><input type="checkbox" name="check" value="1.25"  onchange="show_txt5();"/>Bebida grande</label>
+            <div id="this5"> </div>
+            <label><input type="checkbox" name="check" value="1.25"  onchange="show_txt6();"/>Bebida mediana</label>
+            <div id="this6"> </div>
+            <label><input type="checkbox" name="check" value="1.25"  onchange="show_txt7();"/>Bebida pequeña</label>
+            <div id="this7"> </div>
+            <label><input type="checkbox" name="check" value="1.25"  onchange="show_txt8();"/>Cafe</label>
+            <div id="this8"> </div>
+            <label><input type="checkbox" name="check" value="1.25"  onchange="show_txt9();"/>Postre</label>
+            <div id="this9"> </div>
+    </fieldset>
+    <br>
+    </form>
+    <button onclick="program();">Comprar</button>
+    <br>
+    <br>
+    <div id="factura">
+
+    </div>
+    <br>
+    <script src="js/Prueba2.js"></script>
+</body>
+</html>

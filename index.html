@@ -13,7 +13,6 @@
     <legend>Combos de comida</legend>
     <h3>Este dia tenemos disponibles los siguientes combos:</h3>
     <div>
-    <section id="ComboS"> 
         <h4>Super Combo</h4>
         <h5>Precio: $7.25</h5>
         <ul>
@@ -55,39 +54,30 @@
     <fieldset>
         <legend>Productos Adcionales</legend>
             <p>Elije cualquiera de los productos:</p>
-            <label><input type="checkbox" name="check" value="1.50" onchange="show_txt();"/>Ensalada</label>
+            <label><input type="checkbox" name="check" value="1.50" onchange="show_txt();"/>Ensalada ($1.50 c/u)</label>
             <div id="this"> </div>
-			<label><input type="checkbox" name="check" value="1.25" onchange="show_txt1();" />Papa frita</label>
+			<label><input type="checkbox" name="check" value="1.25" onchange="show_txt1();" />Papa frita ($1.25 c/u)</label>
             <div id="this1"> </div>
-			<label><input type="checkbox" name="check" value="1.75"  onchange="show_txt2();"/>Pieza de pollo grande</label>
+			<label><input type="checkbox" name="check" value="1.75"  onchange="show_txt2();"/>Pieza de pollo grande ($1.75 c/u)</label>
             <div id="this2"> </div>
-			<label><input type="checkbox" name="check" value="1.50"  onchange="show_txt3();"/>Pieza de pollo mediana</label>
+			<label><input type="checkbox" name="check" value="1.50"  onchange="show_txt3();"/>Pieza de pollo mediana ($1.50 c/u)</label>
             <div id="this3"> </div>
-			<label><input type="checkbox" name="check" value="1.25"  onchange="show_txt4();"/>Pieza de pollo pequeña</label>
+			<label><input type="checkbox" name="check" value="1.25"  onchange="show_txt4();"/>Pieza de pollo pequeña ($1.25 c/u)</label>
             <div id="this4"> </div>
-            <label><input type="checkbox" name="check" value="1.25"  onchange="show_txt5();"/>Bebida grande</label>
+            <label><input type="checkbox" name="check" value="1.25"  onchange="show_txt5();"/>Bebida grande ($1.50 c/u)</label>
             <div id="this5"> </div>
-            <label><input type="checkbox" name="check" value="1.25"  onchange="show_txt6();"/>Bebida mediana</label>
+            <label><input type="checkbox" name="check" value="1.25"  onchange="show_txt6();"/>Bebida mediana ($1.25 c/u)</label>
             <div id="this6"> </div>
-            <label><input type="checkbox" name="check" value="1.25"  onchange="show_txt7();"/>Bebida pequeña</label>
+            <label><input type="checkbox" name="check" value="1.25"  onchange="show_txt7();"/>Bebida pequeña ($1.00 c/u)</label>
             <div id="this7"> </div>
-            <label><input type="checkbox" name="check" value="1.25"  onchange="show_txt8();"/>Cafe</label>
+            <label><input type="checkbox" name="check" value="1.25"  onchange="show_txt8();"/>Cafe ($''.50 c/u)</label>
             <div id="this8"> </div>
-            <label><input type="checkbox" name="check" value="1.25"  onchange="show_txt9();"/>Postre</label>
+            <label><input type="checkbox" name="check" value="1.25"  onchange="show_txt9();"/>Postre ($1.25 c/u)</label>
             <div id="this9"> </div>
     </fieldset>
     <br>
     </form>
     <button onclick="program();">Comprar</button>
-	 <p id="formstatus"></p>
-        <p>
-        Instrucciones: CTRL+E para comentar y CTRL+S para Guardar,
-        ESC para Cancelar.
-        </p>
-        <label for="email">Tu Comentario: </label>
-        <div id="view"></div>
-        <textarea name="message" id="area" value="Tu mensaje" id="message" ></textarea>
-        <input type="submit" name ="submit" value="Enviar" />
     <br>
     <br>
     <div id="factura">

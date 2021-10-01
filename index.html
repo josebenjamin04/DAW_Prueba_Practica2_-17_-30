@@ -13,7 +13,6 @@
     <legend>Combos de comida</legend>
     <h3>Este dia tenemos disponibles los siguientes combos:</h3>
     <div>
-     <section id="ComboS">  
         <h4>Super Combo</h4>
         <h5>Precio: $7.25</h5>
         <ul>
@@ -42,7 +41,7 @@
         </ul>
     </section>
     </div>
-    <form action="javascript:void(0);" id="formCP">
+    <form  id="formCP">
         <p>Elije tu combo preferido:</p>
         <label><input type="radio" name="combo" id="sp" value="Super Combo">Super Combo</label>
         <label><input type="radio" name="combo" id="cp" value="Combo Personal">Combo Personal</label>
@@ -55,44 +54,32 @@
     <fieldset>
         <legend>Productos Adcionales</legend>
             <p>Elije cualquiera de los productos:</p>
-            <label><input type="checkbox" name="check" value="1.50" onchange="show_txt();"/>Ensalada ($1.50 c/u)</label>
+            <label><input type="checkbox" id="check1" value="1.50" onchange="show_txt();"/>Ensalada ($1.50 c/u)</label>
             <div id="this"> </div>
-			<label><input type="checkbox" name="check" value="1.25" onchange="show_txt1();" />Papa frita ($1.25 c/u)</label>
+			<label><input type="checkbox" id="check2" value="1.25" onchange="show_txt1();" />Papa frita ($1.25 c/u)</label>
             <div id="this1"> </div>
-			<label><input type="checkbox" name="check" value="1.75"  onchange="show_txt2();"/>Pieza de pollo grande ($1.75 c/u)</label>
+			<label><input type="checkbox" id="check3" value="1.75"  onchange="show_txt2();"/>Pieza de pollo grande ($1.75 c/u)</label>
             <div id="this2"> </div>
-			<label><input type="checkbox" name="check" value="1.50"  onchange="show_txt3();"/>Pieza de pollo mediana ($1.50 c/u)</label>
+			<label><input type="checkbox" id="check4" value="1.50"  onchange="show_txt3();"/>Pieza de pollo mediana ($1.50 c/u)</label>
             <div id="this3"> </div>
-			<label><input type="checkbox" name="check" value="1.25"  onchange="show_txt4();"/>Pieza de pollo pequeña ($1.25 c/u)</label>
+			<label><input type="checkbox" id="check5" value="1.25"  onchange="show_txt4();"/>Pieza de pollo pequeña ($1.25 c/u)</label>
             <div id="this4"> </div>
-            <label><input type="checkbox" name="check" value="1.25"  onchange="show_txt5();"/>Bebida grande ($1.50 c/u)</label>
+            <label><input type="checkbox" id="check6" value="1.50"  onchange="show_txt5();"/>Bebida grande ($1.50 c/u)</label>
             <div id="this5"> </div>
-            <label><input type="checkbox" name="check" value="1.25"  onchange="show_txt6();"/>Bebida mediana ($1.25 c/u)</label>
+            <label><input type="checkbox" id="check7" value="1.25"  onchange="show_txt6();"/>Bebida mediana ($1.25 c/u)</label>
             <div id="this6"> </div>
-            <label><input type="checkbox" name="check" value="1.25"  onchange="show_txt7();"/>Bebida pequeña ($1.00 c/u)</label>
+            <label><input type="checkbox" id="check8" value="1.00"  onchange="show_txt7();"/>Bebida pequeña ($1.00 c/u)</label>
             <div id="this7"> </div>
-            <label><input type="checkbox" name="check" value="1.25"  onchange="show_txt8();"/>Cafe ($''.50 c/u)</label>
+            <label><input type="checkbox" id="check9" value="0.50"  onchange="show_txt8();"/>Cafe ($0.50 c/u)</label>
             <div id="this8"> </div>
-            <label><input type="checkbox" name="check" value="1.25"  onchange="show_txt9();"/>Postre ($1.25 c/u)</label>
+            <label><input type="checkbox" id="check10" value="1.25"  onchange="show_txt9();"/>Postre ($1.25 c/u)</label>
             <div id="this9"> </div>
     </fieldset>
     <br>
     </form>
-	   <p id="formstatus"></p>
-        <p>
-        Instrucciones: CTRL+E para Comentar y editar el comentario y CTRL+S para Guardar,
-        ESC para Cancelar.
-        </p>
-        <label for="email">Comentario: </label>
-        <div id="view"></div>
-        <textarea name="message" id="area" value="Tu mensaje" id="message" ></textarea>
-	<br>
-	<br>
-    <button  id="compra" onclick="program();">Comprar</button>
-  
+    <button onclick="program();">Comprar</button>
     <br>
     <br>
-
     <div id="factura">
 
     </div>
